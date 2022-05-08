@@ -1,0 +1,25 @@
+{
+  "root": "libs/imperative-handle-tutorial",
+  "sourceRoot": "libs/imperative-handle-tutorial/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/imperative-handle-tutorial/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/imperative-handle-tutorial"],
+      "options": {
+        "jestConfig": "libs/imperative-handle-tutorial/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

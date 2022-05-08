@@ -1,0 +1,23 @@
+{
+  "root": "libs/state-tutorial",
+  "sourceRoot": "libs/state-tutorial/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/state-tutorial/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/state-tutorial"],
+      "options": {
+        "jestConfig": "libs/state-tutorial/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

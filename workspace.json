@@ -1,7 +1,16 @@
 {
   "version": 2,
   "projects": {
+    "callback-tutorial": "libs/callback-tutorial",
+    "context-tutorial": "libs/context-tutorial",
+    "effect-tutorial": "libs/effect-tutorial",
+    "imperative-handle-tutorial": "libs/imperative-handle-tutorial",
+    "layout-effect-tutorial": "libs/layout-effect-tutorial",
     "main": "apps/main",
-    "main-e2e": "apps/main-e2e"
+    "main-e2e": "apps/main-e2e",
+    "memo-tutorial": "libs/memo-tutorial",
+    "reducer-tutorial": "libs/reducer-tutorial",
+    "ref-tutorial": "libs/ref-tutorial",
+    "state-tutorial": "libs/state-tutorial"
   }
 }

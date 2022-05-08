@@ -1,0 +1,23 @@
+{
+  "root": "libs/context-tutorial",
+  "sourceRoot": "libs/context-tutorial/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/context-tutorial/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/context-tutorial"],
+      "options": {
+        "jestConfig": "libs/context-tutorial/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

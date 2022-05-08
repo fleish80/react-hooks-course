@@ -1,0 +1,23 @@
+{
+  "root": "libs/ref-tutorial",
+  "sourceRoot": "libs/ref-tutorial/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/ref-tutorial/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ref-tutorial"],
+      "options": {
+        "jestConfig": "libs/ref-tutorial/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

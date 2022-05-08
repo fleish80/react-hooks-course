@@ -1,0 +1,23 @@
+{
+  "root": "libs/layout-effect-tutorial",
+  "sourceRoot": "libs/layout-effect-tutorial/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/layout-effect-tutorial/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/layout-effect-tutorial"],
+      "options": {
+        "jestConfig": "libs/layout-effect-tutorial/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

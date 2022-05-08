@@ -1,0 +1,23 @@
+{
+  "root": "libs/effect-tutorial",
+  "sourceRoot": "libs/effect-tutorial/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/effect-tutorial/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/effect-tutorial"],
+      "options": {
+        "jestConfig": "libs/effect-tutorial/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

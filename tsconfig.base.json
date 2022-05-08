@@ -14,7 +14,29 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@react-hooks-course/callback-tutorial": [
+        "libs/callback-tutorial/src/index.ts"
+      ],
+      "@react-hooks-course/context-tutorial": [
+        "libs/context-tutorial/src/index.ts"
+      ],
+      "@react-hooks-course/effect-tutorial": [
+        "libs/effect-tutorial/src/index.ts"
+      ],
+      "@react-hooks-course/imperative-handle-tutorial": [
+        "libs/imperative-handle-tutorial/src/index.ts"
+      ],
+      "@react-hooks-course/layout-effect-tutorial": [
+        "libs/layout-effect-tutorial/src/index.ts"
+      ],
+      "@react-hooks-course/memo-tutorial": ["libs/memo-tutorial/src/index.ts"],
+      "@react-hooks-course/reducer-tutorial": [
+        "libs/reducer-tutorial/src/index.ts"
+      ],
+      "@react-hooks-course/ref-tutorial": ["libs/ref-tutorial/src/index.ts"],
+      "@react-hooks-course/state-tutorial": ["libs/state-tutorial/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

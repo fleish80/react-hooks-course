@@ -1,0 +1,23 @@
+{
+  "root": "libs/memo-tutorial",
+  "sourceRoot": "libs/memo-tutorial/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/memo-tutorial/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/memo-tutorial"],
+      "options": {
+        "jestConfig": "libs/memo-tutorial/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
